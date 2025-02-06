@@ -59,7 +59,7 @@ export const Projects = () => {
                             <h3 className="text-xl font-bold mb-2">Algorithm Strategy</h3>
                             <p className="text-grey-400 mb-4">The implementation compares two methods, greedy and backtracking, in selecting course schedules.</p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["Python", "Jupyter"].map((tech, key) => (
+                                {["HTML", "CSS", "JavaScript"].map((tech, key) => (
                                     <span key={key} className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/20 hover:shadow-[0_2px_8px_rgba(244,67,54,0.1)] transition-all">
                                         {tech}
                                     </span>
