@@ -19,7 +19,7 @@ export const Projects = () => {
                             </div>
 
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/ZaidaanRandih/PayPlus" className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"> View Project → <img src="https://github.com/ZaidaanRandih/Zaidaan-Portofolio/blob/main/public/github.png" className="w-6 h-6 ml-2" /> </a>
+                                <a href="https://github.com/ZaidaanRandih/PayPlus" className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"> View Project → <img src="https://github.com/ZaidaanRandih/Zaidaan-Portofolio/blob/main/public/github.png?raw=true" className="w-6 h-6 ml-2" /> </a>
                             </div>
                         </div>
 
@@ -35,7 +35,7 @@ export const Projects = () => {
                             </div>
 
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/ZaidaanRandih/TBA" className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"> View Project → <img src="https://github.com/ZaidaanRandih/Zaidaan-Portofolio/blob/main/public/github.png" className="w-6 h-6 ml-2" /> </a>
+                                <a href="https://github.com/ZaidaanRandih/TBA" className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"> View Project → <img src="https://github.com/ZaidaanRandih/Zaidaan-Portofolio/blob/main/public/github.png?raw=true" className="w-6 h-6 ml-2" /> </a>
                             </div>
                         </div>
 
@@ -51,7 +51,7 @@ export const Projects = () => {
                             </div>
 
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/ZaidaanRandih/Image-recognition-AdjwaMedjool" className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"> View Project → <img src="https://github.com/ZaidaanRandih/Zaidaan-Portofolio/blob/main/public/github.png" className="w-6 h-6 ml-2" /> </a>
+                                <a href="https://github.com/ZaidaanRandih/Image-recognition-AdjwaMedjool" className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"> View Project → <img src="https://github.com/ZaidaanRandih/Zaidaan-Portofolio/blob/main/public/github.png?raw=true" className="w-6 h-6 ml-2" /> </a>
                             </div>
                         </div>
 
@@ -67,7 +67,7 @@ export const Projects = () => {
                             </div>
 
                             <div className="flex justify-between items-center">
-                                <a href="https://zaidaanrandih.github.io/TubesSA/" className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"> View Project → <img src="https://github.com/ZaidaanRandih/Zaidaan-Portofolio/blob/main/public/link.png" className="w-6 h-6 ml-2" /> </a>
+                                <a href="https://zaidaanrandih.github.io/TubesSA/" className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"> View Project → <img src="https://github.com/ZaidaanRandih/Zaidaan-Portofolio/blob/main/public/link.png?raw=true" className="w-6 h-6 ml-2" /> </a>
                             </div>
                         </div>
 
