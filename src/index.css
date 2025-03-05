@@ -3,6 +3,8 @@
 html, body{
   margin: 0;
   padding: 0;
+  overflow: auto;
+  scrollbar-width: none;
   font-family: "Space Grotesk", sans-serif;
   background: #0a0a0a;
   color: #f3f4f6;
