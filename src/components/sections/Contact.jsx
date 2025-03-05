@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 
 export const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [popupMessage, setPopupMessage] = useState(null);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -13,9 +14,9 @@ export const Contact = () => {
             e.target,
             import.meta.env.VITE_PUBLIC_KEY
         ).then(() => {
-            alert("Message Sent Successfully");
+            setPopupMessage("Message Sent Successfully! Thank you for reaching out to me :)");
             setFormData({ name: '', email: '', message: '' });
-        }).catch(() => alert("Wait! Something went wrong :( , Please Try Again!"));
+        }).catch(() => setPopupMessage("Wait! Something went wrong :( Please Try Again!"));
     };
 
     return (
@@ -65,6 +66,19 @@ export const Contact = () => {
                     </form>
                 </div>
             </RevealOnScroll>
+            
+            {popupMessage && (
+                <div className="fixed inset-0 flex items-center justify-center bg-white/5 px-4">
+                    <div className="bg-black p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
+                        <p className="text-lg font-medium text-white-800">{popupMessage}</p>
+                        <button 
+                            onClick={() => setPopupMessage(null)}
+                            className="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">
+                            OK
+                        </button>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };
