@@ -2,8 +2,18 @@ import { RevealOnScroll } from '../RevealOnScroll'
 
 export const About = () => {
 
-    const frontendSkills = ["React", "Vue", "TailwindCSS", "Bootstrap"];
-    const backendSkills = ["NodeJS", "Python", "Golang", "Java"];
+    const frontendSkills = {
+        React: "https://react.dev/",
+        Vue: "https://vuejs.org/",
+        TailwindCSS: "https://tailwindcss.com/",
+        Bootstrap: "https://getbootstrap.com/",
+    };
+    const backendSkills = {
+        NodeJS: "https://nodejs.org/",
+        Python: "https://docs.python.org/3/",
+        Golang: "https://go.dev/doc/",
+        Java: "https://dev.java/",
+    };
 
     return (
         <section id="about" className="min-h-screen flex items-center justify-center py-20">
@@ -22,10 +32,16 @@ export const About = () => {
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
                                 <div className="flex flex-wrap gap-2">
-                                    {frontendSkills.map((tech, key) => (
-                                        <span key={key} className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/20 hover:shadow-[0_2px_8px_rgba(244,67,54,0.1)] transition-all">
+                                    {Object.entries(frontendSkills).map(([tech, url]) => (
+                                        <a
+                                            key={tech}
+                                            href={url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/20 hover:shadow-[0_2px_8px_rgba(244,67,54,0.1)] transition-all"
+                                        >
                                             {tech}
-                                        </span>
+                                        </a>
                                     ))}
                                 </div>
                             </div>
@@ -33,10 +49,16 @@ export const About = () => {
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                                 <h3 className="text-xl font-bold mb-4">Backend</h3>
                                 <div className="flex flex-wrap gap-2">
-                                    {backendSkills.map((tech, key) => (
-                                        <span key={key} className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/20 hover:shadow-[0_2px_8px_rgba(244,67,54,0.1)] transition-all">
+                                    {Object.entries(backendSkills).map(([tech, url]) => (
+                                        <a
+                                            key={tech}
+                                            href={url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/20 hover:shadow-[0_2px_8px_rgba(244,67,54,0.1)] transition-all"
+                                        >
                                             {tech}
-                                        </span>
+                                        </a>
                                     ))}
                                 </div>
                             </div>
