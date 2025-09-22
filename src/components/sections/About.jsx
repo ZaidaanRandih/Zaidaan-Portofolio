@@ -107,10 +107,18 @@ export const About = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold">Staff of Development and Partnership Division</h4>
-                                    <p>FIA (Mar 2024 - <span className="bg-gradient-to-r from-red-500 to-blue-200 bg-clip-text text-transparent">Present</span>)</p>
+                                    <p>FIA (Mar 2024 - Mar 2025)</p>
                                 </div>
-
-
+                            </div>
+                        </div>
+                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(244,67,54,0.1)] transition-all">
+                            <h3 className="text-xl font-bold mb-4">👨‍💻 Work Experience </h3>
+                            <div className="space-y-4 text-gray-300">
+                                <div>
+                                    <h4 className="font-semibold"> PT Infrastruktur Telekomunikasi Indonesia (Telkominfra)</h4>
+                                    <p>Internship (Jul 2025 - Sep 2025)</p>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
