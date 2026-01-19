@@ -7,12 +7,14 @@ export const About = () => {
         Vue: "https://vuejs.org/",
         TailwindCSS: "https://tailwindcss.com/",
         Bootstrap: "https://getbootstrap.com/",
+        TypeScript: "https://www.typescriptlang.org/",
     };
     const backendSkills = {
         NodeJS: "https://nodejs.org/",
         Python: "https://docs.python.org/3/",
         Golang: "https://go.dev/doc/",
         Java: "https://dev.java/",
+        AWS: "https://aws.amazon.com/",
     };
 
     return (
@@ -23,8 +25,8 @@ export const About = () => {
                         About Me
                     </h2>
 
-                    <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(244,67,54,0.1)] transition-all">
-                        <p className="text-grey-300 mb-6">
+                    <div className="glass rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+                        <p className="text-gray-300 mb-6">
                             My journey is ever-unfolding, seeking new alliances, noble endeavors, and epic quests in the realms of software development, web engineering, and system design. Shouldst thou seek a valiant comrade for an expedition into the unknown, summon me forth, and together we shall forge new legends.
                         </p>
 
@@ -67,7 +69,7 @@ export const About = () => {
                     </div>
 
                     <div className="grid grid-col-1 md:grid-cols-2 gap-6 mt-8">
-                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(244,67,54,0.1)] transition-all">
+                        <div className="p-6 rounded-xl border-white/10 border glass hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(244,67,54,0.1)] transition-all">
                             <h3 className="text-xl font-bold mb-4">🏰 Education </h3>
                             <ul className="list-disc list-inside text-gray-300 space-y-2 ">
                                 <li>
@@ -78,8 +80,8 @@ export const About = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(244,67,54,0.1)] transition-all">
-                            <h3 className="text-xl font-bold mb-4">✨ Organization/Voulenteer Experience </h3>
+                        <div className="p-6 rounded-xl border-white/10 border glass hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(244,67,54,0.1)] transition-all">
+                            <h3 className="text-xl font-bold mb-4">✨ Organization/Volunteer Experience </h3>
                             <div className="space-y-4 text-gray-300">
                                 <div>
                                     <h4 className="font-semibold">Carnival 22 Event Planner</h4>
@@ -111,14 +113,14 @@ export const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(244,67,54,0.1)] transition-all">
+                        <div className="p-6 rounded-xl border-white/10 border glass hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(244,67,54,0.1)] transition-all">
                             <h3 className="text-xl font-bold mb-4">👨‍💻 Work Experience </h3>
                             <div className="space-y-4 text-gray-300">
                                 <div>
                                     <h4 className="font-semibold"> PT Infrastruktur Telekomunikasi Indonesia (Telkominfra)</h4>
                                     <p>Internship (Jul 2025 - Sep 2025)</p>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>

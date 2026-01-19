@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-html, body{
+html,
+body {
   margin: 0;
   padding: 0;
   overflow: auto;
@@ -10,9 +11,11 @@ html, body{
   color: #f3f4f6;
 }
 
-@layer utilities{
-  @keyframes blink{
-    0%, 100% {
+@layer utilities {
+  @keyframes blink {
+
+    0%,
+    100% {
       opacity: 1;
     }
 
@@ -21,12 +24,12 @@ html, body{
     }
   }
 
-  .animate-blink{
+  .animate-blink {
     animation: blink 0.8s step-end infinite;
   }
 
 
-  @keyframes loading{
+  @keyframes loading {
     0% {
       transform: translateX(-100%);
     }
@@ -36,18 +39,25 @@ html, body{
     }
   }
 
-  .animate-loading-bar{
+  .animate-loading-bar {
     animation: loading 1s ease infinite;
   }
 }
 
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(30px);
+  transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
 }
 
-.reveal.visible{
+.reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
