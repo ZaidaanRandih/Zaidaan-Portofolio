@@ -1,5 +1,6 @@
 import { RevealOnScroll } from '../RevealOnScroll'
-
+import tubesSaImg from '../../assets/TubesSA.png'
+import TBAImg from '../../assets/TBA.png'
 const projects = [
     {
         title: "PayPlus",
@@ -14,6 +15,7 @@ const projects = [
         title: "Automata Theory",
         description: "A comprehensive study and implementation of Automata Theory concepts during the course at Telkom University.",
         tags: ["Python"],
+        img: TBAImg,
         links: {
             github: "https://github.com/ZaidaanRandih/TBA",
         },
@@ -30,9 +32,9 @@ const projects = [
         title: "Algorithm Strategy",
         description: "Comparative implementation of greedy and backtracking algorithms for optimizing course schedules.",
         tags: ["HTML", "CSS", "JavaScript"],
+        img: tubesSaImg,
         links: {
-            demo: "https://zaidaanrandih.github.io/TubesSA/",
-            // github: "#", // Add github link if needed, assuming the demo link was primary
+            demo: "https://tubes-sa-chi.vercel.app/",
         },
     },
 ];
@@ -61,11 +63,16 @@ export const Projects = () => {
                             >
                                 {/* Preview Image Placeholder */}
                                 <div className="h-48 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative overflow-hidden">
-                                    {/* This is a placeholder. In real use, you'd use <img src={project.img} /> */}
-                                    <div className="absolute inset-0 bg-red-500/5 group-hover:bg-red-500/10 transition-colors" />
-                                    <span className="text-4xl font-bold text-white/5 group-hover:text-white/10 transition-colors">
-                                        {project.title}
-                                    </span>
+                                    {project.img ? (
+                                        <img src={project.img} alt={project.title} className="absolute h-full object-top" />
+                                    ) : (
+                                        <>
+                                            <div className="absolute inset-0 bg-red-500/5 group-hover:bg-red-500/10 transition-colors" />
+                                            <span className="text-4xl font-bold text-white/5 group-hover:text-white/10 transition-colors">
+                                                {project.title}
+                                            </span>
+                                        </>
+                                    )}
                                 </div>
 
                                 <div className="p-6">
