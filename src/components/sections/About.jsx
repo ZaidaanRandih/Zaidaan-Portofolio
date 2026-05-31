@@ -31,7 +31,7 @@ export const About = () => {
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                            <div className="rounded-xl p-6 bg-white/5 border border-white/5 hover:border-red-500/30 hover:bg-red-500/5 transition-all duration-300">
                                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {Object.entries(frontendSkills).map(([tech, url]) => (
@@ -48,7 +48,7 @@ export const About = () => {
                                 </div>
                             </div>
 
-                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                            <div className="rounded-xl p-6 bg-white/5 border border-white/5 hover:border-red-500/30 hover:bg-red-500/5 transition-all duration-300">
                                 <h3 className="text-xl font-bold mb-4">Backend</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {Object.entries(backendSkills).map(([tech, url]) => (
