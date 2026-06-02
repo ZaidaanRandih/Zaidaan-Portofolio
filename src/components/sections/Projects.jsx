@@ -1,13 +1,15 @@
 import { RevealOnScroll } from '../RevealOnScroll'
 import tubesSaImg from '../../assets/TubesSA.png'
 import TBAImg from '../../assets/TBA.png'
+import payplusImg from '../../assets/payplus.png'
 const projects = [
     {
         title: "PayPlus",
         description: "A digital wallet designed to help users manage their finances effectively and organized. Features secure transactions and real-time tracking.",
         tags: ["Java", "HTML", "CSS", "JavaScript", "Servlet"],
+        img: payplusImg,
         links: {
-            // demo: "#", // Add demo link if available
+            demo: "https://thepayplus.github.io/PayPlus_FE/",
             github: "https://github.com/ZaidaanRandih/PayPlus",
         },
     },
@@ -35,6 +37,7 @@ const projects = [
         img: tubesSaImg,
         links: {
             demo: "https://tubes-sa-chi.vercel.app/",
+            github: "https://github.com/ZaidaanRandih/Greedy-Method-or-Backtracking-Method",
         },
     },
 ];
