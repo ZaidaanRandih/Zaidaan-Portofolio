@@ -2,6 +2,7 @@ import { RevealOnScroll } from '../RevealOnScroll'
 import tubesSaImg from '../../assets/TubesSA.png'
 import TBAImg from '../../assets/TBA.png'
 import payplusImg from '../../assets/payplus.png'
+import ajwaMedjoolImg from '../../assets/Ajwa-Medjool.png'
 const projects = [
     {
         title: "PayPlus",
@@ -26,8 +27,9 @@ const projects = [
         title: "Image Recognition",
         description: "AI project to distinguish between Adjwa and Medjool dates using K-nearest neighbor algorithm. Achieved high accuracy in classification.",
         tags: ["Python", "Jupyter"],
+        img: ajwaMedjoolImg,
         links: {
-            github: "https://github.com/ZaidaanRandih/Image-recognition-AdjwaMedjool",
+            github: "https://github.com/ZaidaanRandih/Image-recognition-AdjwaMedjool/blob/main/AjwaOrMedjool.ipynb",
         },
     },
     {
